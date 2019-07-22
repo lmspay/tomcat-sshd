@@ -11,3 +11,6 @@ ssh 用户名 root 密码 root
 4. curl
 
 开放 22及8080 端口
+
+运行:
+docker run -d -p 10022:22 -p18080:8080 --name tsshdtest --cap-add SYS_PTRACE lmspay/tomcat-sshd:7-jre8-3
